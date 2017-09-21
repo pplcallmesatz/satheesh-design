@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Time to Hack: Firebase with JavaScript and jQuery</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <style type="text/css">
+    #contacts p, 
+    #contacts p.lead{
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Data</h1>
+    <hr/>
+	  
+
+		  <div class="row">
+      <div class="col-md-12">
+        <form method="post" name="contactFormTwo">
+<!--         TITLE  -->
+			<div class="form-group">
+            <label for="name">Title</label>
+            <input type="text" class="form-control" id="title" required placeholder="Enter name">
+          </div>
+<!--			URL   -->
+			<div class="form-group">
+            <label for="name">URL</label>
+            <input type="text" class="form-control" id="url" required placeholder="Enter name">
+          </div>
+<!--			Description  -->
+			<div class="form-group">
+            <label for="name">Description</label>
+				<textarea type="text" rows="3" class="form-control" id="description" required placeholder="Enter name"></textarea>
+          </div>
+<!--			License   -->
+			<div class="form-group">
+            <label for="name">License</label>
+            <input type="text" class="form-control" id="license" required placeholder="Enter name">
+          </div>
+			<!--			Type   -->
+
+			<div class="form-group">
+            <label for="name">Type</label>
+            <select class="form-control" id="type">
+				<option value="sketch.png">sketch</option>
+				<option value="photoshop.svg">photoshop</option>
+				<option value="uiux.svg">UI/UX</option>
+				<option value="code.svg">HTML/CSS</option>
+				</select>
+          </div>
+			<!--			LAdded By   -->
+			<div class="form-group">
+            <label for="name">Added by</label>
+            <input type="text" class="form-control" id="author" required placeholder="Enter name">
+          </div>
+			
+          <button type="button" class="btn btn-primary valTwo">Submit</button>
+        </form>
+  
+		
+		
+		
+			  </div>
+	  </div>
+	   
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- Include Firebase Library -->
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <!-- Contacts Store JavaScript -->
+  <script src="new-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+$font-stack:    Helvetica, sans-serif;
+$primary: #Fa404D;
+$font-color: #B3ABAB;
+$white: #fff;
+$boxShadow: 0px 0px 20px rgba(0,0,0,0.20);
+$genPadding: 0px 15px 0px 15px;
+
+
+
+
+@mixin primary-btn($primary,$font-color){
+	background-color: $primary;
+	color: $white;
+	border-color: $primary;
+}
+@mixin padding-expand($paddingTop,$paddingRight,$paddingBottom,$paddingLeft){
+	padding-top: $paddingTop;
+	padding-right: $paddingRight;
+	padding-bottom: $paddingBottom;
+	padding-left: $paddingLeft;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($boxShadow) {
+  -webkit-box-shadow: $boxShadow;
+     -moz-box-shadow: $boxShadow;
+      -ms-box-shadow: $boxShadow;
+          box-shadow: $boxShadow;
+}
+@mixin transform-transY($transY) {
+  -webkit-transform: translateY($transY);
+     -moz-transform: translateY($transY);
+      -ms-transform: translateY($transY);
+          transform: translateY($transY);
+}
+@mixin transform-transXY($transX,$transY) {
+  -webkit-transform: translate($transX,$transY);
+     -moz-transform: translate($transX,$transY);
+      -ms-transform: translate($transX,$transY);
+          transform: translate($transX,$transY);
+}
+@mixin transition($all, $timing, $duration){
+	transition: $all $timing $duration;
+	-webkit-transition: $all $timing $duration;
+	-moz-transition: $all $timing $duration;
+	-ms-transition: $all $timing $duration;
+	-o-transition: $all $timing $duration;
+}

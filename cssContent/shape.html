@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CSS Shape transition </title>
+
+<style>
+	body, html {
+		font-family: sans-serif;
+	}
+	.box-overlay {
+		background-color: coral;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.box-content {
+		background-color: #fff;
+		max-width: 600px;
+		text-align: center;
+		border-radius: 15px;
+		min-height: 350px;
+		padding: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	}
+
+	.output-shape {
+		width: 200px;
+		height: 200px;
+		background-color: white;
+		border: 1px solid gray;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	input {
+		display: none;
+	}
+	label {
+		padding: 10px;
+		border: 1px solid gray;
+		display: inline-block;
+		border-radius: 5px;
+		text-transform: uppercase;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.option-name {
+		font-size: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		text-transform: uppercase;
+	}
+	
+/*	Circle */
+	label[for="circle"] {
+		color: dodgerblue;
+		border-color: dodgerblue;
+	}
+
+	#circle:checked ~ .box-content [for="circle"] {
+		color: #fff;
+		background-color: dodgerblue;
+	}
+	#circle:checked ~ .box-content .output .option-name{
+		color: dodgerblue;
+	}
+	#circle:checked ~ .box-content .output .option-name:before{
+		content:"Circle" !important;
+	}
+	#circle:checked ~ .box-content .output .output-shape{
+		border-radius: 50%;
+		background-color: dodgerblue;
+		border-color: dodgerblue;
+	}
+	#circle:checked ~ .box-overlay {
+		background-color: dodgerblue !important;
+		
+	} 
+	
+/*	Rectangle */
+		label[for="rectangle"] {
+		color: darkorange;
+		border-color: darkorange;
+	}
+	
+	#rectangle:checked ~ .box-content [for="rectangle"] {
+		color: #fff;
+		background-color: darkorange;
+	}
+		#rectangle:checked ~ .box-content .output .option-name{
+		color: darkorange;
+	}
+	#rectangle:checked ~ .box-content .output .option-name:before{
+		content:"rectangle" !important;
+	}
+	#rectangle:checked ~ .box-content .output .output-shape{
+		width: 280px;
+		background-color: darkorange;
+		border-color: darkorange;
+		
+	}
+	#rectangle:checked ~ .box-overlay {
+		background-color: darkorange !important;
+		
+	}
+	
+/*	Square */
+	label[for="square"] {
+		color: #3FBB76;
+		border-color: #3FBB76;
+	}
+	#square:checked ~ .box-content [for="square"] {
+		color: #fff;
+		background-color: #3FBB76;
+	}
+	#square:checked ~ .box-content .output .option-name{
+		color: #3FBB76;
+	}
+	#square:checked ~ .box-content .output .option-name:before{
+		content:"square" !important;
+	}
+	#square:checked ~ .box-content .output .output-shape{
+	background-color: #3FBB76;
+		border-color: #3FBB76;
+	}
+	#square:checked ~ .box-overlay {
+		background-color: #3FBB76 !important;
+		
+	} 
+	.box-overlay, .output-shape, .option-name:before {
+		transition: all linear 0.50s;
+		-webkit-transition: all linear 0.50s;
+		-o-transition: all linear 0.50s;
+		-moz-transition: all linear 0.50s;
+	}
+	
+	@media (max-width: 768px) {
+		.box-content {
+			margin-top: 20px;
+		}
+	}
+	@media (min-width: 769px) {
+		body, html {
+/*			height: 100%;*/
+		}
+	}
+
+	</style>
+</head>
+
+<body>
+<div class="box">
+	<input type="radio" name="radio" id="circle" checked>
+	<input type="radio" name="radio" id="rectangle">
+	<input type="radio" name="radio" id="square">
+	<div class="box-content">
+	<label for="circle">circle</label>
+	<label for="rectangle">Rectangle</label>
+	<label for="square">square</label>
+		<h4 class="output">
+		You have selected
+			<div class="output-shape"></div>
+			<span class="option-name"></span>
+		</h4>
+		
+	</div>
+	<div class="box-overlay"></div>
+	</div>
+ 
+
+  
+  </body>
+
+</html>

@@ -1,0 +1,21 @@
+@import 'global-variable';
+.btn {
+	&.btn{
+		&-rounded {
+			border-radius: 30px !important;
+		}
+		
+	}
+}
+	.btn-primary, .btn-primary:active, .btn-primary.active{
+		background-color: $primary;
+		color: $white;
+			border-color: $primary;
+		@include transition( all , linear ,0.25s);
+	
+	&:hover, &:focus, &:visited {
+		@extend .btn-primary;
+		background-color: $primary - 20 !important;
+		border-color: $primary - 20 !important;
+	}
+	}

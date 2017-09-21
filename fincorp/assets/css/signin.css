@@ -1,0 +1,132 @@
+.btn.btn-rounded {
+	border-radius: 30px !important
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active:visited,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary.active,
+.btn-primary.active:hover,
+.active.btn-primary:active,
+.btn-primary.active:focus,
+.btn-primary.active:visited {
+	background-color: #fa404d;
+	color: #fff;
+	border-color: #fa404d;
+	transition: all linear 0.25s;
+	-webkit-transition: all linear 0.25s;
+	-moz-transition: all linear 0.25s;
+	-ms-transition: all linear 0.25s;
+	-o-transition: all linear 0.25s
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active:visited,
+.btn-primary.active:hover:focus,
+.btn-primary.active:hover:visited,
+.btn-primary:focus,
+.btn-primary.active:focus:hover,
+.active.btn-primary:focus:active,
+.btn-primary.active:focus:visited,
+.btn-primary:visited,
+.btn-primary.active:visited:hover,
+.active.btn-primary:visited:active,
+.btn-primary.active:visited:focus {
+	background-color: #e62c39 !important;
+	border-color: #e62c39 !important
+}
+
+html,
+body {
+	height: 100%
+}
+
+.signin .box {
+	position: relative;
+	padding: 0px 15px 0px 15px
+}
+
+.signin .box .row {
+	height: 100%
+}
+
+.signin .box .row [class*="col-sm-"] {
+	display: none;
+	height: 100%
+}
+
+.signin .box .row [class*="col-sm-"]:first-child {
+	background-color: #Fa404D
+}
+
+.signin .box .row [class*="col-sm-"]:last-child {
+	background-color: #fff
+}
+
+.signin .box .signin-box {
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	margin-top: 30px;
+	z-index: 1000;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px
+}
+
+.signin .box .signin-box h4 {
+	color: #b3abab;
+	margin-top: 20px
+}
+
+.signin .box .signin-box p {
+	margin-top: 30px
+}
+
+@media (min-width: 768px) {
+	.signin .box {
+		height: 100%
+	}
+	.signin .signin-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: 0px !important;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 400px
+	}
+	.signin [class*="col-sm-"] {
+		display: block !important
+	}
+}
+
+a,
+a:visited,
+a:active,
+a:hover,
+a.active,
+a.active:visited,
+a.active:active,
+a.active:hover {
+	color: #fa404d;
+	text-decoration: none !important
+}
