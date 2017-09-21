@@ -1,0 +1,69 @@
+@import 'global-variable';
+@import 'btn';
+
+html, body {
+	height: 100%;
+}
+.signin {
+	.box {
+		position: relative;
+		padding: $genPadding;
+		.row{
+			height: 100%;
+			[class*="col-sm-"] {
+				display: none;
+				height: 100%;
+				&:first-child{
+					background-color: #Fa404D;
+				}
+				&:last-child {
+					background-color: $white;
+				}
+			}
+		}
+		//Sign in box
+		.signin-box {
+			background-color: #fff;
+			@include border-radius(10px); 
+			@include box-shadow($boxShadow);
+			background-color: $white;
+			margin-top: 30px;
+			z-index: 1000;
+			@include padding-expand(15px , 15px , 15px ,15px);
+			h4 {
+				color:$font-color;
+				margin-top: 20px;
+			}
+			p {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.signin {
+		.box{
+		height: 100%;
+			}
+		.signin-box {
+			position: absolute;
+			top:50%;
+			left: 50%;
+			margin-top: 0px !important;
+			@include transform-transXY(-50%, -50%);
+						width: 400px;
+		}
+		[class*="col-sm-"] { 
+		display: block !important;
+		}
+	}
+	
+}
+
+
+a, a:visited, a:active, a:hover, a.active, a.active:visited, a.active:active, a.active:hover {
+	color: $primary;
+	text-decoration: none !important;
+}
+
+

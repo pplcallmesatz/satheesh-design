@@ -1,0 +1,142 @@
+/* Styles for portfolio  */
+
+/* Created by SATHEESH KUMAR S */
+
+body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #3FBB76;
+      font-size: 16px;
+      position: relative;
+  }
+.avatar {
+          margin-top: 20px;
+      }
+  .avatar,
+  .arrow {
+      display: inline !important;
+      width: 150px;
+  }
+  .arrow {
+      width: 40px;
+      border-radius: 20px;
+	  margin-bottom: 50px;
+	  margin-top: 30px;
+	  cursor: pointer;
+      transition: all linear 0.15s;
+      -webkit-transition: all linear 0.25s;
+      -moz-transition: all linear 0.25s;
+      -o-transition: all linear 0.25s;
+  }
+  .arrow:hover {
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+      color: #fff;
+      font-size: 1.8em;
+      margin-top: 40px;
+  }
+  p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 0.9em;
+  }
+  .description {
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+.link {
+	font-weight: 600;
+	color: rgb(255, 245, 0);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.link:hover, .link:visited, .link:focus {
+	text-decoration: none;
+}
+
+
+.svg-snowscene {
+  width: 100%;
+}
+
+.snow {
+  fill: #fff;
+  animation-name: snowing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.snow:nth-child(2n) {
+  animation-delay: 1.5s;
+}
+.snow:nth-child(3n) {
+  animation-delay: 2.3s;
+  animation-duration: 3.3s;
+}
+.snow:nth-child(4n) {
+  animation-delay: 0.8s;
+  animation-duration: 3.2s;
+}
+.snow:nth-child(5n) {
+  animation-delay: 2.8s;
+}
+
+@keyframes snowing {
+  0% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+    transform: translateY(200px);
+      -ms-transform: translateY(200px);
+  }
+}
+@-webkit-keyframes snowing {
+  0% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+    -webkit-transform: translateY(200px);
+      
+  }
+}
+@-moz-keyframes snowing {
+  0% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+    -moz-transform: translateY(200px);
+  }
+}
+@-o-keyframes snowing {
+  0% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+    -o-transform: translateY(200px);
+  }
+}
+
+
+
+  @media (min-width: 768px) {
+      .description {
+          max-width: 500px;
+          margin: 50px auto;
+      }
+  }
+  @media (min-width: 1441px) {
+      .avatar {
+          margin-top: 100px;
+      }
+  }
+  @media (max-width: 413px) {
+      .avatar {
+          margin-top: 20px;
+      }
+  }
